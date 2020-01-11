@@ -1,0 +1,17 @@
+{
+    "name": "velber/whats-new-in-php",
+    "authors": [
+        {
+            "name": "vova",
+            "email": "wolodymyr.ch@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "code_examples/"
+        }
+    }
+}
