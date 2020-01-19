@@ -3,7 +3,7 @@
 use App\V74\MyClass;
 
 echo '<pre>';
-echo '<h1>PHP 7.0</h1>';
+echo '<h1>PHP 7.4</h1>';
 
 /**
  * Arrow functions notation
