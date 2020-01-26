@@ -21,6 +21,16 @@ test(1, 2, 3);`
 7. Weak References
 8. Preloading
 
+### [PHP 7.2](code_examples/V72/index.php)
+*30 November 2017*
+
+https://www.php.net/manual/en/migration72.new-features.php
+1. New object type
+2. Allow a trailing comma for grouped namespaces
+- - -
+3. Abstract method overriding
+4. Parameter type widening
+
 ### [PHP 7.1](code_examples/V71/index.php)
 *1 December 2016*
 
