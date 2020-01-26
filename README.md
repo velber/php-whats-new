@@ -21,6 +21,22 @@ test(1, 2, 3);`
 7. Weak References
 8. Preloading
 
+### [PHP 7.3](code_examples/V73/index.php)
+*6 December 2018*
+
+https://www.php.net/manual/en/migration73.new-features.php
+1. More Flexible Heredoc and Nowdoc Syntax
+2. Trailing Commas are allowed in Calls
+3. Array Destructuring supports Reference Assignments
+4. JSON_THROW_ON_ERROR
+5. is_countable Function
+6. array_key_first(), array_key_last()
+7. Argon2id Support
+8. Deprecations
+  - Deprecate image2wbmp() function
+  - Deprecate case-insensitive constants
+  - Deprecate FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED flags used with FILTER_VALIDATE_URL
+
 ### [PHP 7.2](code_examples/V72/index.php)
 *30 November 2017*
 
