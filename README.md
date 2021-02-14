@@ -8,6 +8,7 @@ Open http://localhost:8000/?version=70 in browser to open needed PHP 7.0 version
 *26 November 2020*
 
 https://www.php.net/releases/8.0/en.php
+
 https://www.php.net/manual/en/migration80.new-features.php
 
 1. Named arguments
@@ -33,6 +34,8 @@ https://www.php.net/manual/en/migration80.new-features.php
 10. Type system and error handling improvements
 11. Other syntax tweaks and improvements
 12. New Classes, Interfaces, and Functions
+- - -
+13. New mixed pseudo type https://php.watch/versions/8.0/mixed-type
 
 
 

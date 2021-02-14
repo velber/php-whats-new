@@ -156,11 +156,32 @@ echo '<hr><h2>Consistent type errors for internal functions</h2>';
 
 
 // PHP 7
-strlen([]); // Warning: strlen() expects parameter 1 to be string, array given
+// strlen([]); // Warning: strlen() expects parameter 1 to be string, array given
 
-array_chunk([], -1); // Warning: array_chunk(): Size parameter expected to be greater than 0
+// array_chunk([], -1); // Warning: array_chunk(): Size parameter expected to be greater than 0
 
 // PHP 8
-strlen([]); // TypeError: strlen(): Argument #1 ($str) must be of type string, array given
+// strlen([]); // TypeError: strlen(): Argument #1 ($str) must be of type string, array given
 
-array_chunk([], -1); // ValueError: array_chunk(): Argument #2 ($length) must be greater than 0
+// array_chunk([], -1); // ValueError: array_chunk(): Argument #2 ($length) must be greater than 0
+
+/**
+ * New mixed pseudo type
+ *    string|int|float|bool|null|array|object|callable|resource
+ * mixed is assumed when no type is declared
+ *
+ *
+ * */
+echo '<hr><h2>New mixed pseudo type</h2>';
+
+class Example {
+    public mixed $exampleProperty;
+    public function foo(mixed $foo): mixed {}
+}
+
+// doesn't make sense
+// $foo = (mixed) $bar;
+// is_mixed
+// function (mixed|FooClass $bar): int|mixed {} - mixed cannot be used in union with other types
+// mixed|void - error
+
