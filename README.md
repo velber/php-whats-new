@@ -4,6 +4,38 @@ In this project describes new features and updates of php with examples, grouped
 ` php -S localhost:8000` - launch php server.
 Open http://localhost:8000/?version=70 in browser to open needed PHP 7.0 version example.
 
+### [PHP 8.0](code_examples/V80/index.php)
+*26 November 2020*
+
+https://www.php.net/releases/8.0/en.php
+https://www.php.net/manual/en/migration80.new-features.php
+
+1. Named arguments
+   * Specify only required parameters, skipping optional ones.
+   * Arguments are order-independent and self-documented.
+2. Attributes - Instead of PHPDoc annotations, you can now use structured metadata with PHP's native syntax.   
+3. Constructor property promotion - Less boilerplate code to define and initialize properties.  
+4. Union types - Instead of PHPDoc annotations for a combination of types, you can use native union type declarations 
+   that are validated at runtime.
+5. Match expression - The new match is similar to switch and has the following features
+   * Match is an expression, meaning its result can be stored in a variable or returned.
+   * Match branches only support single-line expressions and do not need a break; statement.
+   * Match does strict comparisons.
+6. Nullsafe operator - Instead of null check conditions, you can now use a chain of calls with the new nullsafe operator.
+   When the evaluation of one element in the chain fails, the execution of the entire chain aborts and the entire chain 
+   evaluates to null.   
+7. Saner string to number comparisons - When comparing to a numeric string, PHP 8 uses a number comparison. Otherwise, 
+   it converts the number to a string and uses a string comparison.
+8 Consistent type errors for internal functions - Most of the internal functions now throw an Error exception if the
+   validation of the parameters fails.  
+9. Just-In-Time (JIT) compilation 
+- - -
+10. Type system and error handling improvements
+11. Other syntax tweaks and improvements
+12. New Classes, Interfaces, and Functions
+
+
+
 ### [PHP 7.4](code_examples/V74/index.php)
 *28 November 2019*
 
