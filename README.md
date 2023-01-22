@@ -4,6 +4,36 @@ In this project describes new features and updates of php with examples, grouped
 ` php -S localhost:8000` - launch php server.
 Open http://localhost:8000/?version=70 in browser to open needed PHP 7.0 version example.
 
+- - -
+### [PHP 8.2](code_examples/V82/index.php)
+*08 December 2022*
+
+https://www.php.net/releases/8.2/en.php
+
+https://www.php.net/manual/en/migration82.php
+
+1. Readonly classes
+
+- - -
+### [PHP 8.1](code_examples/V81/index.php)
+*25 November 2021*
+
+https://www.php.net/releases/8.1/en.php
+
+https://www.php.net/manual/en/migration81.php
+
+1. Enumerations. Use enum instead of a set of constants and get validation out of the box.
+2. Readonly Properties. Readonly properties cannot be changed after initialization, i.e. after a value is assigned to them. They are a great way to model value objects and data-transfer objects.
+3. First-class Callable Syntax. It is now possible to get a reference to any function – this is called first-class callable syntax.
+4. New in initializers. Objects can now be used as default parameter values, static variables, and global constants, as well as in attribute arguments. This effectively makes it possible to use nested attributes.
+5. Pure Intersection Types. Use intersection types when a value needs to satisfy multiple type constraints at the same time. It is not currently possible to mix intersection and union types together such as A&B|C.
+6. Never return type. A function or method declared with the never type indicates that it will not return a value and will either throw an exception or end the script’s execution with a call of die(), exit(), trigger_error(), or something similar.
+7. Final class constants. It is possible to declare final class constants, so that they cannot be overridden in child classes.
+8. Explicit Octal numeral notation. It is now possible to write octal numbers with the explicit 0o prefix.
+9. Fibers. Use instead ->request()->then()->then()...
+10. Array unpacking support for string-keyed arrays. PHP supported unpacking inside arrays through the spread operator before, but only if the arrays had integer keys. Now it is possible to unpack arrays with string keys too.
+
+- - -
 ### [PHP 8.0](code_examples/V80/index.php)
 *26 November 2020*
 

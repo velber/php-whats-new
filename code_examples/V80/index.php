@@ -1,7 +1,5 @@
 <?php
 
-use App\V74\MyClass;
-
 echo '<pre>';
 echo '<h1>PHP 8.0</h1>';
 
