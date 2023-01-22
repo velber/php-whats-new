@@ -13,11 +13,11 @@ https://www.php.net/releases/8.2/en.php
 https://www.php.net/manual/en/migration82.php
 
 1. Readonly classes.
-2. Disjunctive Normal Form (DNF) Types.
+2. Disjunctive Normal Form (DNF) Types. DNF types allow us to combine union and intersection types, following a strict rule: when combining union and intersection types, intersection types must be grouped with brackets.
 3. Allow null, false, and true as stand-alone types.
-4. New "Random" extension.
-5. Constants in traits.
-6. Deprecate dynamic properties.
+4. New "Random" extension. The "random" extension provides a new object-oriented API to random number generation.
+5. Constants in traits. You cannot access the constant through the name of the trait, but, you can access the constant through the class that uses the trait.
+6. Deprecate dynamic properties. The creation of dynamic properties is deprecated to help avoid mistakes and typos, unless the class opts in by using the #[\AllowDynamicProperties] attribute. stdClass allows dynamic properties. Usage of the __get/__set magic methods is not affected by this change.
 
 
 ## [PHP 8.1](code_examples/V81/index.php)
