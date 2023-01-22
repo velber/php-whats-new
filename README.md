@@ -1,21 +1,26 @@
 # whats-new-in-php
 In this project describes new features and updates of php with examples, grouped by php versions.
-### Run examples
+## Run examples
 ` php -S localhost:8000` - launch php server.
 Open http://localhost:8000/?version=70 in browser to open needed PHP 7.0 version example.
 
-- - -
-### [PHP 8.2](code_examples/V82/index.php)
+
+## [PHP 8.2](code_examples/V82/index.php)
 *08 December 2022*
 
 https://www.php.net/releases/8.2/en.php
 
 https://www.php.net/manual/en/migration82.php
 
-1. Readonly classes
+1. Readonly classes.
+2. Disjunctive Normal Form (DNF) Types.
+3. Allow null, false, and true as stand-alone types.
+4. New "Random" extension.
+5. Constants in traits.
+6. Deprecate dynamic properties.
 
-- - -
-### [PHP 8.1](code_examples/V81/index.php)
+
+## [PHP 8.1](code_examples/V81/index.php)
 *25 November 2021*
 
 https://www.php.net/releases/8.1/en.php
@@ -33,8 +38,8 @@ https://www.php.net/manual/en/migration81.php
 9. Fibers. Use instead ->request()->then()->then()...
 10. Array unpacking support for string-keyed arrays. PHP supported unpacking inside arrays through the spread operator before, but only if the arrays had integer keys. Now it is possible to unpack arrays with string keys too.
 
-- - -
-### [PHP 8.0](code_examples/V80/index.php)
+
+## [PHP 8.0](code_examples/V80/index.php)
 *26 November 2020*
 
 https://www.php.net/releases/8.0/en.php
@@ -69,7 +74,7 @@ https://www.php.net/manual/en/migration80.new-features.php
 
 
 
-### [PHP 7.4](code_examples/V74/index.php)
+## [PHP 7.4](code_examples/V74/index.php)
 *28 November 2019*
 
 https://www.php.net/manual/en/migration74.new-features.php
@@ -86,7 +91,7 @@ test(1, 2, 3);`
 7. Weak References
 8. Preloading
 
-### [PHP 7.3](code_examples/V73/index.php)
+## [PHP 7.3](code_examples/V73/index.php)
 *6 December 2018*
 
 https://www.php.net/manual/en/migration73.new-features.php
@@ -102,7 +107,7 @@ https://www.php.net/manual/en/migration73.new-features.php
   - Deprecate case-insensitive constants
   - Deprecate FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED flags used with FILTER_VALIDATE_URL
 
-### [PHP 7.2](code_examples/V72/index.php)
+## [PHP 7.2](code_examples/V72/index.php)
 *30 November 2017*
 
 https://www.php.net/manual/en/migration72.new-features.php
@@ -112,7 +117,7 @@ https://www.php.net/manual/en/migration72.new-features.php
 3. Abstract method overriding
 4. Parameter type widening
 
-### [PHP 7.1](code_examples/V71/index.php)
+## [PHP 7.1](code_examples/V71/index.php)
 *1 December 2016*
 
 https://www.php.net/manual/en/migration71.new-features.php
@@ -126,7 +131,7 @@ https://www.php.net/manual/en/migration71.new-features.php
 7. Support for keys in list()
 8. Support for negative string offsets
 
-### [PHP 7.0](code_examples/V70/index.php)
+## [PHP 7.0](code_examples/V70/index.php)
 *3 December 2015*
 
 https://www.php.net/manual/en/migration70.new-features.php#migration70.new-features.scalar-type-declarations
@@ -141,7 +146,7 @@ https://www.php.net/manual/en/migration70.new-features.php#migration70.new-featu
 8. Constant arrays using define()
 9. IntlChar
 
-### [PHP 5.6](code_examples/V56/index.php)
+## [PHP 5.6](code_examples/V56/index.php)
 *28 August 2014*
 
 https://www.php.net/manual/en/migration56.new-features.php#migration56.new-features.splat
