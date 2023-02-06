@@ -1,8 +1,6 @@
 <?php
 
-
-namespace App\V74;
-
+namespace App\Helpers;
 
 class MyClass
 {

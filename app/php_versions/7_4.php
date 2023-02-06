@@ -1,6 +1,6 @@
 <?php
 
-use App\V74\MyClass;
+use App\Helpers\MyClass;
 
 echo '<pre>';
 echo '<h1>PHP 7.4</h1>';

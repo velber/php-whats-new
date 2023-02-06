@@ -1,9 +1,14 @@
 # whats-new-in-php
-In this project describes new features and updates of php with examples, grouped by php versions.
-## Run examples
-` php -S localhost:8000` - launch php server.
-Open http://localhost:8000/?version=70 in browser to open needed PHP 7.0 version example.
+This is a simple handbook of new features and updates of php with examples, grouped by php versions.
 
+## Run examples
+### On Linux
+`php -S localhost:8000` - launch php server.
+
+### Using Docker
+Make sure you are located in project directory.
+Run `docker build -t whats-new-in-php .` command to build a container.
+Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
 
 ## [PHP 8.2](code_examples/V82/index.php)
 *08 December 2022*
@@ -12,7 +17,7 @@ https://www.php.net/releases/8.2/en.php
 
 https://www.php.net/manual/en/migration82.php
 
-1. Readonly classes.
+1. Readonly classes. Marking a class as readonly will add the readonly modifier to every declared property.
 2. Disjunctive Normal Form (DNF) Types. DNF types allow us to combine union and intersection types, following a strict rule: when combining union and intersection types, intersection types must be grouped with brackets.
 3. Allow null, false, and true as stand-alone types.
 4. New "Random" extension. The "random" extension provides a new object-oriented API to random number generation.
