@@ -6,9 +6,9 @@ This is a simple handbook of new features and updates of php with examples, grou
 `php -S localhost:8000` - launch php server.
 
 ### Using Docker
-Make sure you are located in project directory.
-Run `docker build -t whats-new-in-php .` command to build a container.
-Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
+- Make sure you are in app source code directory, i.e. `/path/to/whats-new-in-php`.
+- Run `docker build -t whats-new-in-php .` command to build a container.
+- Then run the container via `docker run -dp 8000:8000 -w /app -v "$(pwd):/app" whats-new-in-php`.
 
 ## [PHP 8.2](code_examples/V82/index.php)
 *08 December 2022*
