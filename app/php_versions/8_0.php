@@ -132,19 +132,29 @@ if ($session !== null) {
 
 // PHP 8
 $country = $session?->user?->getAddress()?->country;
-var_dump($country);$country = $session?->user?->getAddress()?->country;
-var_dump($user?->order?->price);
+var_dump($country); // null
+
+// in this case it additional will thow: "Warning:  Undefined variable $user in ..."
+// var_dump($user?->order?->price); // null
 
 /**
  * Saner string to number comparisons
  * When comparing to a numeric string, PHP 8 uses a number comparison. Otherwise, it converts the number to a string
  * and uses a string comparison.
+ * So earler all comparings (string vs number) was like numbers, and now left only numeric string like numbers.
  * */
 echo '<hr><h2>Saner string to number comparisons</h2>';
 
 
 // PHP 8
-var_dump(0 == 'foobar'); // false, but true in  PHP 7
+var_dump(0 == 'foobar'); // false, but true in  PHP 7 | it was equals to 0 == 0 but now '0' == 'foobar'
+var_dump(123 == '123'); // still true, like in  PHP 7 | because now it compares numbers like 123 == 123
+var_dump(123 == '123foo'); // false, but true in  PHP 7 | because now it compares like string '123' == '123foo'
+
+// other examples
+var_dump(in_array('abc', [0, 1, ''])); // false, but true in  PHP 7 
+var_dump(in_array('123rr', [0, 1, 123])); // false, but true in  PHP 7 
+var_dump(in_array(123, [0, 1, '123sdd'])); // false, but true in  PHP 7 
 
 /**
  * Consistent type errors for internal functions

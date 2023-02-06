@@ -22,3 +22,6 @@ if (false === $versionKey) {
 
 // show examples of specified PHP version
 require 'app/php_versions' . DIRECTORY_SEPARATOR . str_replace('.', '_', PHP_VERSIOINS[$versionKey]) . '.php';
+
+// TODO
+//  - show info from readme at home page
